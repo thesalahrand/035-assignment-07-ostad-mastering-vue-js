@@ -8,7 +8,7 @@ const compToShow = ref('carousel')
 
 <template>
   <div class="max-w-[540px] mx-auto py-8 px-4">
-    <div class="flex justify-center space-x-8 mb-8">
+    <div class="flex justify-center gap-x-8 mb-8">
       <div class="flex items-center">
         <input
           id="carousel"

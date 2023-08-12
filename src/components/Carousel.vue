@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, onBeforeUnmount } from 'vue'
+import { onMounted, onBeforeUnmount, nextTick } from 'vue'
 
 const images = [
   'https://images.pexels.com/photos/414144/pexels-photo-414144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -16,6 +16,7 @@ onMounted(() => {
   myCarousel = new Flickity(elem, {
     cellAlign: 'left',
     contain: true,
+    imagesLoaded: true,
   })
 })
 
